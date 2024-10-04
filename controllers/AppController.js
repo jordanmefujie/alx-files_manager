@@ -12,7 +12,7 @@ class AppController {
     res.status(200).json({ redis: redisAlive, db: dbAlive });
   }
 
-  // Handle the /stats endpoint
+  // Handle the //stats endpoint
   static async getStats(req, res) {
     const usersCount = await dbClient.nbUsers();
     const filesCount = await dbClient.nbFiles();

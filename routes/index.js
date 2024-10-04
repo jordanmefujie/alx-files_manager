@@ -5,7 +5,7 @@ import AppController from '../controllers/AppController.js';
 
 const router = express.Router();
 
-// Define the routes
+// Define the routes for the server
 router.get('/status', AppController.getStatus);
 router.get('/stats', AppController.getStats);
 
